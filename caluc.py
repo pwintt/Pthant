@@ -15,11 +15,12 @@ print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Exponential")
 
 while True:
     
-    choice = input("Enter choice(1/2/3/4): ")
-    if choice in ('1', '2', '3', '4'):
+    choice = input("Enter choice(1/2/3/4/5): ")
+    if choice in ('1', '2', '3', '4','5'):
         try:
             a = float(input("Enter first number: "))
             b = float(input("Enter second number: "))
@@ -38,6 +39,8 @@ while True:
 
         elif choice == '4':
             print("Sum: {} / {} = {}".format(a,b,a/b))
+        elif choice == '5':
+            print("Sum: {} ^ {} = {}".format(a,b,a**b))
         
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
